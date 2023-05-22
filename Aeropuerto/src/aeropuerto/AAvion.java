@@ -3,7 +3,19 @@ package aeropuerto;
 
 public class AAvion {
     int id, numeroVuelo, numeroPuestos;
-    String nomJefe, aerolinea;
+    String nomJefe, aerolinea, origen, destino, horaSalida, horaLlegada;
+    
+ public AAvion(int id, int numeroVuelo, String nomJefe, String aerolinea, String origen, String destino, String horaSalida, String horaLlegada) {
+        this.id = id;
+        this.numeroVuelo = numeroVuelo;
+        this.nomJefe = nomJefe;
+        this.aerolinea = aerolinea;
+        this.origen = origen;
+        this.destino = destino;
+        this.horaSalida = horaSalida;
+        this.horaLlegada = horaLlegada;
+    }   
+    
 
     public int getId() {
         return id;
@@ -24,6 +36,23 @@ public class AAvion {
     public String getAerolinea() {
         return aerolinea;
     }
+    
+      public String getOrigen() {
+        return origen;
+    }
+    
+    public String getDestino() {
+        return destino;
+    }
+    
+     public String getHoraSalida() {
+        return horaSalida;
+     }
+    
+    public String getHoraLlegada() {
+        return horaLlegada;
+    }
+    
 
     public void setId(int id) {
         this.id = id;
@@ -59,4 +88,21 @@ public class AAvion {
     public void setAerolinea(String aerolinea) {
         this.aerolinea = aerolinea;
     }
+    
+      public void setOrigen(String origen) {
+        this.origen = origen;
+    }
+
+    public void setDestino(String destino) {
+        this.destino = destino;
+    }
+   
+    public void setHoraSalida(String horaSalida) {
+        this.horaSalida = horaSalida;
+    }
+
+    public void setHoraLlegada(String horaLlegada) {
+        this.horaLlegada = horaLlegada;
+    }
+    
 }
